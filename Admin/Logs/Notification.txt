@@ -1,0 +1,56 @@
+--------------------------------------------------------
+userid : 1_
+fcm token : fQBCq6BDB9E:APA91bGkkajzZQ2wmzKWn_CA1rd-cpOd82iDgRNQt4RgB6UL6RfsZl2xWrZpVz3lbjSjaVx-YkBc_kUZdpJFwbPxoR2jA4tf3kPBlRHTSObarOJKX8GpVncKFigLbThmdXV3OEb4lVil
+Result : {"multicast_id":8319932568184903075,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497613833299894%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : fQBCq6BDB9E:APA91bGkkajzZQ2wmzKWn_CA1rd-cpOd82iDgRNQt4RgB6UL6RfsZl2xWrZpVz3lbjSjaVx-YkBc_kUZdpJFwbPxoR2jA4tf3kPBlRHTSObarOJKX8GpVncKFigLbThmdXV3OEb4lVil
+Result : {"multicast_id":7018768285223022837,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497614284206472%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":8275461578851452504,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497615754460517%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":5702432785301475636,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497615779078689%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":4709079837744242034,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497615858438998%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":6053552411179568571,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497615901989339%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":7714756369020320164,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497615995064109%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":7283418940880125194,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497616004820324%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":4992223399423487635,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497616009907613%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":6861853371112386752,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497616014065814%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":7388594011929386194,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497616023373812%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : epJuHVhlxA4:APA91bHqpYkFEeJ10-5Ww4Eo-_g6D4hqJNIlmJ-wHPYbwa0lbKvmLeAghJgKPCr8kxEe583FReAAVyqoR3Q5JErkgQuNSQ-FQdVCkEq5G8bqwLlp1uatMuqDwVHvOvhrrO5vfaFleUH8
+Result : {"multicast_id":7752380102135411376,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497616030709760%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : fvd6ZaPCjxQ:APA91bGwuNsaVCUz-CTv3iNGu1Yd9s8Ej9GCUcQmRvEk1xsE6HVJX8SWC9YSlnxEs_duUE2XTWFBoa8k0CkrsB87g0WYxoIcGPB93VIjnFPWH7t5fn_gkrvOySQ2I7x-eg2ERzfZ7u1V
+Result : {"multicast_id":6485110323140817982,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497617543248823%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : 1
+fcm token : fvd6ZaPCjxQ:APA91bGwuNsaVCUz-CTv3iNGu1Yd9s8Ej9GCUcQmRvEk1xsE6HVJX8SWC9YSlnxEs_duUE2XTWFBoa8k0CkrsB87g0WYxoIcGPB93VIjnFPWH7t5fn_gkrvOySQ2I7x-eg2ERzfZ7u1V
+Result : {"multicast_id":8870649476397339590,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497617585740502%849730b2f9fd7ecd"}]}

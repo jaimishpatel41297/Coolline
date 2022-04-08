@@ -1,0 +1,48 @@
+--------------------------------------------------------
+userid : Test
+fcm token : fEcDSvR5068:APA91bEZE14mFbybn8ccDq9k4MWY8joCMFRa3MMKutEjoqO0SzvAXBsnGqoMysfPwWafQWcvDTQ68yPSORbDWshZ59_yI1IVW8zwHn8Vt1pGiMJlmJbMc52aQSYWTqc3a8uOhm5Jmngh
+Result : {"multicast_id":9133896025509168958,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497616653378349%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : Test
+fcm token : fEcDSvR5068:APA91bEZE14mFbybn8ccDq9k4MWY8joCMFRa3MMKutEjoqO0SzvAXBsnGqoMysfPwWafQWcvDTQ68yPSORbDWshZ59_yI1IVW8zwHn8Vt1pGiMJlmJbMc52aQSYWTqc3a8uOhm5Jmngh
+Result : {"multicast_id":7636974053268117064,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497616689202751%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : Test
+fcm token : fvd6ZaPCjxQ:APA91bGwuNsaVCUz-CTv3iNGu1Yd9s8Ej9GCUcQmRvEk1xsE6HVJX8SWC9YSlnxEs_duUE2XTWFBoa8k0CkrsB87g0WYxoIcGPB93VIjnFPWH7t5fn_gkrvOySQ2I7x-eg2ERzfZ7u1V
+Result : {"multicast_id":8982789700662912384,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497616760030715%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : Test
+fcm token : fvd6ZaPCjxQ:APA91bGwuNsaVCUz-CTv3iNGu1Yd9s8Ej9GCUcQmRvEk1xsE6HVJX8SWC9YSlnxEs_duUE2XTWFBoa8k0CkrsB87g0WYxoIcGPB93VIjnFPWH7t5fn_gkrvOySQ2I7x-eg2ERzfZ7u1V
+Result : {"multicast_id":8606983672450570806,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497616800469041%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : Lion Harish Jadawala
+fcm token : dnowDamX6do:APA91bG8RhPVd1FB5woLxeyKu1QyaXyPMlMNUzu2_QkhwaKp_h0QLp3eoDITcHMnUsHgzkr0Xjz7BCWeUuFry51JXceUfL1wm9r-zKHChvdN9a-28RMrdoKbBk9J2XeLVYMi1qALNvGq
+Result : {"multicast_id":7883641587163157599,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+--------------------------------------------------------
+userid : Lion Prafull Gandhi
+fcm token : ft_b1dHlFvA:APA91bGvD3yBhhx8ASrFdyQ-VW4nb9dMEVmP214ICJ7EXM-TGwaczxLrCJY3kiawMNgFmEI_p7SKfJ7Mw0B4EYtKKsF708PzdAOpYz7Ua1EAAbSwL0LYShgH4Hs6985IxKsn_bYTPy2L
+Result : {"multicast_id":4924031422213266426,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+--------------------------------------------------------
+userid : Test
+fcm token : fvd6ZaPCjxQ:APA91bGwuNsaVCUz-CTv3iNGu1Yd9s8Ej9GCUcQmRvEk1xsE6HVJX8SWC9YSlnxEs_duUE2XTWFBoa8k0CkrsB87g0WYxoIcGPB93VIjnFPWH7t5fn_gkrvOySQ2I7x-eg2ERzfZ7u1V
+Result : {"multicast_id":9140312665683937034,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497617350280592%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : Lion Harish Jadawala
+fcm token : dnowDamX6do:APA91bG8RhPVd1FB5woLxeyKu1QyaXyPMlMNUzu2_QkhwaKp_h0QLp3eoDITcHMnUsHgzkr0Xjz7BCWeUuFry51JXceUfL1wm9r-zKHChvdN9a-28RMrdoKbBk9J2XeLVYMi1qALNvGq
+Result : {"multicast_id":7429293563749203335,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+--------------------------------------------------------
+userid : Lion Prafull Gandhi
+fcm token : ft_b1dHlFvA:APA91bGvD3yBhhx8ASrFdyQ-VW4nb9dMEVmP214ICJ7EXM-TGwaczxLrCJY3kiawMNgFmEI_p7SKfJ7Mw0B4EYtKKsF708PzdAOpYz7Ua1EAAbSwL0LYShgH4Hs6985IxKsn_bYTPy2L
+Result : {"multicast_id":6332972494900577110,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+--------------------------------------------------------
+userid : Test
+fcm token : fvd6ZaPCjxQ:APA91bGwuNsaVCUz-CTv3iNGu1Yd9s8Ej9GCUcQmRvEk1xsE6HVJX8SWC9YSlnxEs_duUE2XTWFBoa8k0CkrsB87g0WYxoIcGPB93VIjnFPWH7t5fn_gkrvOySQ2I7x-eg2ERzfZ7u1V
+Result : {"multicast_id":8514225260609517656,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497617620078442%849730b2f9fd7ecd"}]}
+--------------------------------------------------------
+userid : Lion Harish Jadawala
+fcm token : dnowDamX6do:APA91bG8RhPVd1FB5woLxeyKu1QyaXyPMlMNUzu2_QkhwaKp_h0QLp3eoDITcHMnUsHgzkr0Xjz7BCWeUuFry51JXceUfL1wm9r-zKHChvdN9a-28RMrdoKbBk9J2XeLVYMi1qALNvGq
+Result : {"multicast_id":7965113720546630885,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}
+--------------------------------------------------------
+userid : Lion Prafull Gandhi
+fcm token : ft_b1dHlFvA:APA91bGvD3yBhhx8ASrFdyQ-VW4nb9dMEVmP214ICJ7EXM-TGwaczxLrCJY3kiawMNgFmEI_p7SKfJ7Mw0B4EYtKKsF708PzdAOpYz7Ua1EAAbSwL0LYShgH4Hs6985IxKsn_bYTPy2L
+Result : {"multicast_id":8152681433164926303,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"NotRegistered"}]}

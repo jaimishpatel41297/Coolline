@@ -1,0 +1,580 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="cp_sms_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" type="image/jpg" sizes="24x24" href="plugins/images/Coolinelogo.jpg" />
+    <title>Coolline Admin Panel </title>
+    <!-- Bootstrap Core CSS -->
+
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Menu CSS -->
+    <link href="plugins/bower_components/typeahead.js-master/dist/typehead-min.css" rel="stylesheet" />
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet" />
+    <!-- morris CSS -->
+    <%--<link href="plugins/bower_components/morrisjs/morris.css" rel="stylesheet" />--%>
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet" />
+
+    <%--    <link href="plugins/bower_components/timepicker/bootstrap-timepicker.min.css" rel="stylesheet" />--%>
+
+    <link rel="stylesheet" href="plugins/bower_components/ui-timepicker/jquery.ui.timepicker.css?v=0.3.3" type="text/css" />
+
+    <link href="plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="plugins/cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+    <link href="plugins/bower_components/clockpicker/dist/jquery-clockpicker.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <%-- <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-19175540-9', 'auto');
+        ga('send', 'pageview');
+
+    </script>--%>
+
+    <%--<link href="../dataTables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />--%>
+    <%--<style>
+        .dataTables_length {
+            float: right;
+        }
+
+        .paginate_button {
+            cursor: pointer;
+            background-color: #36a;
+            color: white;
+            padding: 5px;
+            margin: 4px;
+        }
+
+            .paginate_button current {
+                cursor: pointer;
+                background-color: white;
+                color: #36a;
+                padding: 5px;
+                margin: 4px;
+            }
+    </style>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ToolkitScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <%--<div class="preloader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+            </svg>
+        </div>--%>
+        <div id="wrapper">
+            <nav class="navbar navbar-default navbar-static-top m-b-0">
+                <div class="navbar-header">
+                    <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                    <div class="top-left-part">
+                        <a class="logo" href="Dashboard.aspx"><b>
+                            <img src="plugins/images/Coolinelogo.jpg"  alt="admin" /></b>
+                            <span class="hidden-xs">Admin
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="nav navbar-top-links">
+                        <li style="float: left;">
+                            <h2 style="color: White; margin-left: 20px;">Coolline Admin Panel</h2>
+                        </li>
+                        <li class="dropdown pull-right"><a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#">
+                            <img src="plugins/images/Coolinelogo.jpg" alt="user-img" width="42" height="36" class="img-circle"/><b class="hidden-xs">
+                                <asp:Literal runat="server" ID="ltrName1"></asp:Literal>
+                            </b></a>
+                            <ul class="dropdown-menu dropdown-user scale-up">
+                                <%--<li><a href="#"><i class="ti-user"></i>&nbsp;My Profile</a></li>--%>
+                                <%--<li><a href="#"><i class="ti-wallet"></i>&nbsp;My Balance</a></li>--%>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="ChangePassword.aspx"><i class="ti-settings"></i>&nbsp;Change Password</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="Default.aspx"><i class="fa fa-power-off"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </nav>
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+                            <!-- input-group -->
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li class="user-pro"><a href="#" class="waves-effect">
+
+                            <span class="hide-menu">Admin
+                                <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                <%--<li><a href="javascript:void(0)"><i class="ti-user"></i>My Profile</a></li>
+                                <li><a href="javascript:void(0)"><i class="ti-email"></i>Inbox</a></li>--%>
+                                <li><a href="ChangePassword.aspx"><i class="ti-settings"></i>Change Password</a></li>
+                                <li><a href="Logout.aspx"><i class="fa fa-power-off"></i>Logout</a></li>
+                            </ul>
+                        </li>
+
+                        <asp:Literal runat="server" ID="ltrMenu"></asp:Literal>
+                        <li><a href="Dashboard.aspx" class="waves-effect active"><i class="zmdi zmdi-view-dashboard zmdi-hc-fw fa-fw"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li><a href="#" class="waves-effect"><i class="zmdi zmdi-apps zmdi-hc-fw fa fa-plus-square"></i><span class="hide-menu">&nbsp;&nbsp;Master<span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="AddBanner.aspx">Banner</a></li>
+                                <li><a href="AddLogomaster.aspx">LogoMaster</a></li>
+                                <li><a href="AddOurClient.aspx">OurClient</a></li>
+                                <li><a href="AddContact.aspx">Cotact Profile</a></li>
+                               <%-- <li><a href="AddCareer.aspx">Career</a></li>--%>
+                                <li><a href="AddSociallink.aspx">Social Link</a></li>
+                                <li><a href="AddFaq.aspx">FAQ</a></li>
+                                <li><a href="AddOurBranch.aspx">Our Branch</a></li>
+                                <%-- <li><a href="AddMenumaster.aspx">Menu Master</a></li>--%>
+                                <%--<li><a href="AddLeagueQuestion.aspx">League Question</a></li>
+                                <li><a href="ViewLeagueQuestion.aspx">View League Question</a></li>--%>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="zmdi zmdi-apps zmdi-hc-fw fa fa-plus-square"></i><span class="hide-menu">&nbsp;&nbsp;Product Master<span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="AddProductType.aspx">Product Type</a></li>
+                                <li><a href="AddProductcategory.aspx">Product Category</a></li>
+                                <li><a href="AddProduct.aspx">Product</a></li>
+                                <li><a href="AddProductFeature.aspx">Product Feature</a></li>
+                               <%--  <li><a href="AddProductAvailiability.aspx">Product Availability</a></li>--%>
+                                <%--<a href="AddProductAvailiability.aspx">AddProductAvailiability.aspx</a>--%>
+                                 <li><a href="AddOurProject.aspx">Our Project</a></li>
+                                 <li><a href="AddOurProjectCategorg.aspx">Project Categorg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="waves-effect"><i class="zmdi zmdi-apps zmdi-hc-fw fa fa-plus-square"></i><span class="hide-menu">&nbsp;&nbsp;View Data<span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+
+                                <li><a href="Inquiry.aspx">View Inquiry Detail</a></li>
+                                <li><a href="ProductInquiry.aspx">View Product Inquiry</a></li> 
+                            </ul>
+                        </li>
+                        <%--<li><a href="#" class="waves-effect active"><i class="zmdi zmdi-notifications-active zmdi-hc-fw fa-fw"></i><span class="hide-menu">Notification</span></a></li>--%>
+                        <%--<li><a href="#" class="waves-effect"><i class="zmdi zmdi-apps zmdi-hc-fw fa fa-plus-square"></i><span class="hide-menu">&nbsp;&nbsp;Add Master Data <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li><a href="AddPost.aspx">Add Post  </a></li>
+                                <li><a href="AddCategory.aspx">Add Category  </a></li>
+                                <li><a href="AddRegion.aspx">Add Region  </a></li>
+                                <li><a href="AddZone.aspx">Add Zone </a></li>
+                                <li><a href="AddBloodGroup.aspx">Add Blood Group </a></li>
+                               
+                                <li><a href="AddHomeClub.aspx">Add Home Club</a></li>
+                                
+
+                            </ul>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="zmdi zmdi-apps zmdi-hc-fw fa fa-plus-square"></i><span class="hide-menu">&nbsp;&nbsp;Add Dues Data <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li><a href="AddDues.aspx">Add Dues</a></li>
+                                <li><a href="AddClubWiseDues.aspx">Add Club Wise Dues</a></li>
+                                <li><a href="AddDuesDetail.aspx">Add Dues Detail</a></li>
+                                
+
+                            </ul>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="zmdi zmdi-apps zmdi-hc-fw fa fa-plus-square"></i><span class="hide-menu">&nbsp;&nbsp;Others Data <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li><a href="AddEmergencyContact.aspx">Add Emergency Contacts </a></li>
+                                <li><a href="AddDonationDetail.aspx">Add Donation Detail </a></li>
+                                
+                                <li><a href="AddAdvertisement.aspx">Add Advertisement</a></li>
+                                <li><a href="AddDistrictCalender.aspx">Add District Calender</a></li>
+                                <li><a href="BoradCasting.aspx">Broadcasting</a></li>
+                                <!--<li><a href="AddEducation.aspx">Add Education</a></li>
+                                <li><a href="WorkShopMaster.aspx">Add Workshop Master   </a></li>
+                                <li><a href="AddFeesMaster.aspx">Add Fees Master   </a></li>
+                                <li><a href="AddCallMaster.aspx">Add Call Master   </a></li>
+                                <li><a href="AddSmsTemplate.aspx">Add Sms Template </a></li>
+                                <li><a href="AddPrograms.aspx">Add Programs </a></li>
+                                <li><a href="AddProgramsAssistant.aspx">Add Programs Assistant </a></li>-->
+
+                            </ul>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="zmdi zmdi-format-color-fill zmdi-hc-fw fa fa-th-list"></i><span class="hide-menu">&nbsp;&nbsp;View Data<span class="fa arrow"></span>
+                        </span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li><a href="ViewUpcomingEvent.aspx">View Upcoming Events</a></li>
+                                <li><a href="ViewDistrictCalender.aspx">View District Calender</a></li>
+                                <li><a href="ViewMemberData.aspx">View Member Data</a></li>
+                                <li><a href="ViewAlbum.aspx">View Album</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a href="#" class="waves-effect"><i class="zmdi zmdi-apps zmdi-hc-fw fa-fw"></i><span class="hide-menu">Admin <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="AddPanelMenu.aspx">Add  Panel Menu  </a></li>
+                                <li><a href="AssignMenu.aspx">Assign Panel Menu  </a></li>
+                                <li><a href="GroupAlotment.aspx">Group Alotment Moduls  </a></li>
+                                <li><a href="GroupName.aspx">Group Name  </a></li>
+
+                            </ul>
+                        </li>-->--%>
+                        <%--<li class="nav-small-cap">--- Support</li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-circle-o text-danger"></i><span class="hide-menu">Documentation</span></a></li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-circle-o text-success"></i><span class="hide-menu">Faqs</span></a></li>--%>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-wrapper">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <footer class="footer text-center">2018 &copy; Coolline Website. </footer>
+            </div>
+
+        </div>
+        <link href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+
+        <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+
+
+        <%--  <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+         <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        --%>
+
+
+
+
+
+        <%--<script type="text/javascript">
+        $(function () {
+            SearchText();
+        });
+        function SearchText() {
+            $(".autosuggest").autocomplete({
+                source: function (request, response) {
+                    alert();
+                    $.ajax({
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        url: "AddEmployee.aspx/GetAutoCompleteData",
+                        data: "{'username':'" + document.getElementById('txtEmpName1').value + "'}",
+                        dataType: "json",
+                        success: function (data) {
+                            console.log(data.d);
+                            if (data.d.length > 0) {
+                                response($.map(data.d, function (item) {
+                                    return {
+                                        label: item.split('/')[0],
+                                        val: item.split('/')[1]
+                                    }
+                                }));
+                            }
+                            else {
+                                alert();
+                                response([{ label: 'No Records Found', val: -1 }]);
+                            }
+                        },
+                        error: function (result) {
+                            alert("Error");
+                        }
+                    });
+                },
+                select: function (event, ui) {
+                    debugger;
+                    if (ui.item.val == -1) {
+                        return false;
+                    }
+
+                    alert(ui.item.val);
+                    $('#lblUserId').text(ui.item.val);
+                }
+            });
+        }
+    </script>--%>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+
+        <script src="js/jquery.slimscroll.js"></script>
+
+        <script src="js/waves.js"></script>
+
+        <script src="plugins/bower_components/skycons/skycons.js"></script>
+
+        <script src="plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+        <script src="plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+
+        <script src="plugins/bower_components/raphael/raphael-min.js"></script>
+        <%--<script src="plugins/bower_components/morrisjs/morris.js"></script>--%>
+
+        <script src="js/custom.min.js"></script>
+        <script src="js/dashboard4.js"></script>
+        <script src="plugins/bower_components/typeahead.js-master/dist/typeahead.bundle.min.js"></script>
+        <script src="plugins/bower_components/typeahead.js-master/dist/typeahead-init.js"></script>
+
+        <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
+        <script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+        <script src="plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
+        <%--        <script src="../../../cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+        <script src="../../../cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+        <script src="../../../cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+        <script src="../../../cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+        <script src="../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+        <script src="../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+        <script src="../../../cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+        <script src="../../../cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>--%>
+
+        <%--  <script src="plugins/bower_components/typeahead.js-master/dist/typeahead.bundle.min.js"></script>
+        <script src="plugins/bower_components/typeahead.js-master/dist/typeahead-init.js"></script>--%>
+        <script type="text/javascript" src="plugins/bower_components/multiselect/js/jquery.multi-select.js"></script>
+        <script src="plugins/bower_components/custom-select/custom-select.min.js" type="text/javascript"></script>
+        <script src="plugins/bower_components/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+
+
+        <script src="plugins/bower_components/ui-timepicker/jquery.ui.position.min.js"></script>
+        <script type="text/javascript" src="plugins/bower_components/ui-timepicker/jquery.ui.timepicker.js?v=0.3.3"></script>
+
+        <script src="../plugins/bower_components/clockpicker/dist/jquery-clockpicker.min.js"></script>
+
+        <script>
+            // Clock pickers
+            $('#single-input').clockpicker({
+
+                placement: 'bottom',
+                align: 'left',
+                autoclose: true,
+                'default': 'now'
+
+            });
+
+
+            $('.clockpicker').clockpicker({
+                donetext: 'Done',
+
+            })
+              .find('input').change(function () {
+                  console.log(this.value);
+              });
+
+            $('#check-minutes').click(function (e) {
+                // Have to stop propagation here
+                e.stopPropagation();
+                input.clockpicker('show')
+                    .clockpicker('toggleView', 'minutes');
+            });
+            if (/mobile/i.test(navigator.userAgent)) {
+                $('input').prop('readOnly', true);
+            }
+            $('.rmv').click(function (e) {
+                $(".rmvdiv").remove();
+
+            });
+
+</script>
+
+
+        <script src="plugins/bower_components/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+        <script src="plugins/bower_components/jquery-datatables-editable/jquery.dataTables.js" type="text/javascript"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".gvDataTable").prepend($("<thead></thead>").append($(this).find("tr:first")));
+                $(".gvDataTable").dataTable({
+                    "aaSorting": []
+
+                });
+
+            });
+        </script>
+
+
+
+        <%--<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>--%>
+
+
+
+
+
+        <script>
+            $(document).ready(function () {
+                $('.myTable').DataTable();
+                //
+
+                $(document).ready(function () {
+                    var table = $('#example').DataTable({
+                        "columnDefs": [
+                        { "visible": false, "targets": 2 }
+                        ],
+                        "order": [[2, 'asc']],
+                        "displayLength": 25,
+                        "drawCallback": function (settings) {
+                            var api = this.api();
+                            var rows = api.rows({ page: 'current' }).nodes();
+                            var last = null;
+
+                            api.column(2, { page: 'current' }).data().each(function (group, i) {
+                                if (last !== group) {
+                                    $(rows).eq(i).before(
+                                      '<tr class="group"><td colspan="5">' + group + '</td></tr>'
+                                      );
+
+                                    last = group;
+                                }
+                            });
+                        }
+                    });
+
+                    // Order by the grouping
+                    $('#example tbody').on('click', 'tr.group', function () {
+                        var currentOrder = table.order()[0];
+                        if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                            table.order([2, 'desc']).draw();
+                        }
+                        else {
+                            table.order([2, 'asc']).draw();
+                        }
+                    });
+                });
+            });
+            $('#example23').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+        </script>
+
+        <script>
+            jQuery(document).ready(function () {
+
+                // For select 2
+
+                $(".select2").select2();
+                $('.selectpicker').selectpicker();
+
+                $('.timepicker').timepicker({
+
+                })
+
+            });
+
+        </script>
+
+
+        <script>
+
+
+            /*$(function () {
+                GetCustomers(1);
+            });
+
+            function GetCustomers(pageIndex) {
+
+                $.ajax({
+                    type: "POST",
+                    url: "AddEmployee.aspx/GetCustomers",
+                    data: '',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: OnSuccess,
+                    failure: function (response) {
+                        alert(response.d + 'asd');
+                    },
+                    error: function (response) {
+                        console.log(response);
+                        alert(response.d + '12313');
+                    }
+                });
+            }
+            function OnSuccess(response) {
+                var xmlDoc = $.parseXML(response.d);
+                var xml = $(xmlDoc);
+                var customers = xml.find("Customers");
+                // var row = $("[id*=gvCustomers] tr:last-child").clone(true);
+                //$("[id*=gvCustomers] tr").not($("[id*=gvCustomers] tr:first-child")).remove();
+
+                $.each(customers, function () {
+                    var customer = $(this);
+                    console.log(customer);
+                    dataaa = dataaa + "" + $(this).find("FIRST_NAME").text() + ",";
+                });
+            };*/
+
+
+
+
+
+            //var states = ["Andorra", "United Arab Emirates", "Afghanistan"];;
+            var states = ["Andorra", "United Arab Emirates", "Afghanistan", "Antigua and Barbuda", "Anguilla", "Albania", "Armenia", "Angola", "Antarctica", "Argentina", "American Samoa", "Austria", "Australia", "Aruba", "Åland", "Azerbaijan", "Bosnia and Herzegovina", "Barbados", "Bangladesh", "Belgium", "Burkina Faso", "Bulgaria", "Bahrain", "Burundi", "Benin", "Saint Barthélemy", "Bermuda", "Brunei", "Bolivia", "Bonaire", "Brazil", "Bahamas", "Bhutan", "Bouvet Island", "Botswana", "Belarus", "Belize", "Canada", "Cocos [Keeling] Islands", "Congo", "Central African Republic", "Republic of the Congo", "Switzerland", "Ivory Coast", "Cook Islands", "Chile", "Cameroon", "China", "Colombia", "Costa Rica", "Cuba", "Cape Verde", "Curacao", "Christmas Island", "Cyprus", "Czechia", "Germany", "Djibouti", "Denmark", "Dominica", "Dominican Republic", "Algeria", "Ecuador", "Estonia", "Egypt", "Western Sahara", "Eritrea", "Spain", "Ethiopia", "Finland", "Fiji", "Falkland Islands", "Micronesia", "Faroe Islands", "France", "Gabon", "United Kingdom", "Grenada", "Georgia", "French Guiana", "Guernsey", "Ghana", "Gibraltar", "Greenland", "Gambia", "Guinea", "Guadeloupe", "Equatorial Guinea", "Greece", "South Georgia and the South Sandwich Islands", "Guatemala", "Guam", "Guinea-Bissau", "Guyana", "Hong Kong", "Heard Island and McDonald Islands", "Honduras", "Croatia", "Haiti", "Hungary", "Indonesia", "Ireland", "Israel", "Isle of Man", "India", "British Indian Ocean Territory", "Iraq", "Iran", "Iceland", "Italy", "Jersey", "Jamaica", "Jordan", "Japan", "Kenya", "Kyrgyzstan", "Cambodia", "Kiribati", "Comoros", "Saint Kitts and Nevis", "North Korea", "South Korea", "Kuwait", "Cayman Islands", "Kazakhstan", "Laos", "Lebanon", "Saint Lucia", "Liechtenstein", "Sri Lanka", "Liberia", "Lesotho", "Lithuania", "Luxembourg", "Latvia", "Libya", "Morocco", "Monaco", "Moldova", "Montenegro", "Saint Martin", "Madagascar", "Marshall Islands", "Macedonia", "Mali", "Myanmar [Burma]", "Mongolia", "Macao", "Northern Mariana Islands", "Martinique", "Mauritania", "Montserrat", "Malta", "Mauritius", "Maldives", "Malawi", "Mexico", "Malaysia", "Mozambique", "Namibia", "New Caledonia", "Niger", "Norfolk Island", "Nigeria", "Nicaragua", "Netherlands", "Norway", "Nepal", "Nauru", "Niue", "New Zealand", "Oman", "Panama", "Peru", "French Polynesia", "Papua New Guinea", "Philippines", "Pakistan", "Poland", "Saint Pierre and Miquelon", "Pitcairn Islands", "Puerto Rico", "Palestine", "Portugal", "Palau", "Paraguay", "Qatar", "Réunion", "Romania", "Serbia", "Russia", "Rwanda", "Saudi Arabia", "Solomon Islands", "Seychelles", "Sudan", "Sweden", "Singapore", "Saint Helena", "Slovenia", "Svalbard and Jan Mayen", "Slovakia", "Sierra Leone", "San Marino", "Senegal", "Somalia", "Suriname", "South Sudan", "São Tomé and Príncipe", "El Salvador", "Sint Maarten", "Syria", "Swaziland", "Turks and Caicos Islands", "Chad", "French Southern Territories", "Togo", "Thailand", "Tajikistan", "Tokelau", "East Timor", "Turkmenistan", "Tunisia", "Tonga", "Turkey", "Trinidad and Tobago", "Tuvalu", "Taiwan", "Tanzania", "Ukraine", "Uganda", "U.S. Minor Outlying Islands", "United States", "Uruguay", "Uzbekistan", "Vatican City", "Saint Vincent and the Grenadines", "Venezuela", "British Virgin Islands", "U.S. Virgin Islands", "Vietnam", "Vanuatu", "Wallis and Futuna", "Samoa", "Kosovo", "Yemen", "Mayotte", "South Africa", "Zambia", "Zimbabwe"];;
+
+
+            // ---------- Bloodhound ----------
+            var states = new Bloodhound({
+                datumTokenizer: Bloodhound.tokenizers.whitespace,
+                queryTokenizer: Bloodhound.tokenizers.whitespace,
+                // `states` is an array of state names defined in "The Basics"
+                local: states
+            });
+
+            $('#bloodhound .typeahead').typeahead({
+                hint: true,
+                highlight: true,
+                minLength: 1
+            },
+            {
+                name: 'states',
+                source: states
+            });
+            // constructs the suggestion engine
+
+        </script>
+        <%--  <script src="../dataTables/dataTables.bootstrap.js" type="text/javascript"></script>
+        <script src="../dataTables/jquery.dataTables.js" type="text/javascript"></script>--%>
+        <%--<script>
+            $(document).ready(function () {
+                $(".gvDataTable").prepend($("<thead></thead>").append($(this).find("tr:first")));
+                $(".gvDataTable").dataTable({
+                    "aaSorting": []
+
+                });
+            });
+        </script>--%>
+    </form>
+</body>
+</html>

@@ -1,0 +1,593 @@
+/* ------------------------------------------------
+
+        1. Default stylesheets                      
+
+------------------------------------------------ */
+
+body{
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.rev-slider,
+.audioplayer1{
+    direction: ltr;
+}
+
+th,
+td,
+table{
+    text-align: right;
+}
+
+/* ------------------------------------------------
+
+        2. General classes                      
+
+------------------------------------------------ */
+
+.align-right{
+    text-align: left;
+}
+
+.align-left{
+    text-align: right;
+}
+
+.f-right{
+    float: left;
+}
+
+.f-left{
+    float: right;
+}
+
+img.alignright{
+    float: left;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+img.alignleft{
+    float: right;
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.tagcloud span{
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/* ------------------------------------------------
+
+        3. Main
+
+------------------------------------------------ */
+
+/* Header */
+
+.header .top-header .head-info{
+    text-align: left;
+}
+
+.main-navigation > ul > li.dropdown > a:after{
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.main-navigation{
+    text-align: right;
+}
+
+.mega-menu > * .mega-title span{
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.header.style-2 .nav-item .btn:not(:only-child){
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+/* content elements */
+
+{
+    right: auto;
+    left: 0;
+}
+
+.sub-menu-wrap,
+.pbar-inner,
+.call-out-form:not(.style-2) .newsletter-wrap .nl-title:before{
+    left: auto;
+    right: 0;
+}
+
+form{
+    text-align: right;
+}
+
+.custom-list[class*="type-"] li::before{
+    margin-right: 0;
+    margin-left: 13px;
+}
+
+.custom-list.type-5 li::before{
+    content: "\e964";
+}
+
+.contact-info li > i{
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.contact-info li.info-item > i{
+    padding-right: 0;
+    padding-left: 15px;
+}
+
+.accordion .a-title span{
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.accordion{
+    text-align: right;
+}
+
+.accordion .a-title{
+    padding-right: 0;
+    padding-left: 50px;
+}
+
+.accordion .a-title:after{
+    right: auto;
+    left: 20px;
+}
+
+.tabs .tabs-nav li{
+    float: right;
+}
+
+.tabs.style-2 .tabs-nav > li:not(:last-child){
+    margin-right: 0;
+    margin-left: 4px;
+}
+
+.tabs .tabs-nav > li > a span{
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.tabs:not(.style-2) .tabs-nav > li:first-child > a{
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.tabs .tabs-nav > li > a{
+    border-right: none;
+    border-left: 2px solid #f2f3f6;
+}
+
+.tabs:not(.vertical) .tabs-nav > li:last-child > a{
+    border-left: none;
+}
+
+.tabs.vertical:not(.style-2) .tabs-nav > li > a{
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.tabs.vertical.style-2 .tabs-nav > li:not(:last-child){
+    margin-left: 0;
+}
+
+.tabs.vertical.style-2 .tabs-content{
+    margin-left: 0;
+    margin-right: 4px;
+}
+
+[class*="alert"] .close{
+    right: auto;
+    left: 20px;
+}
+
+[class*="alert"]{
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+[class*="alert"]:before{
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+[class*="table-type"] table tr > td, 
+[class*="table-type"] table tr > th{
+    text-align: right;
+}
+
+.prev-page::before{
+    content: '\e93c';
+}
+
+.next-page::before{
+    content: '\e93b';
+}
+
+.pbar-wrap .pbar-title > span{
+    float: left;
+}
+
+.counter .count-item > [class*="licon-"]:not(:last-child){
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.icons-box.style-2:not(.type-2) .item-box i{
+    right: auto;
+    left: 30px;
+}
+
+.icons-box.style-4 .item-box i{
+    left: auto;
+    right: 0;
+}
+
+.icons-box.style-4 .item-box{
+    padding-left: 0;
+    padding-right: 60px;
+}
+
+.icons-box.style-2.type-2 .item-box i{
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.custom-list.var2[class*="type-"] > li:before{
+    float: right;
+    margin-right: 0;
+    margin-left: 13px;
+}
+
+.pt-footer{
+    left: auto;
+    right: 30px;
+}
+
+.pt-section .tabs.vertical .tabs-content{
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.pt-section .tabs.vertical .tabs-nav > li.ui-tabs-active a, 
+.pt-section .tabs .tabs-nav > li > a{
+    border-left-color: transparent;
+}
+
+.call-out-form:not(.style-2) .newsletter-wrap .nl-title{
+    padding-left: 0;
+    padding-right: 80px;
+}
+
+.call-out-form span.call-out-icon, 
+.bg-full-right > span{
+    left: auto;
+    right: 100px;
+}
+
+[id*="newsletter"] .btn{
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+input:not([type="submit"]), 
+textarea, 
+.custom-select .select-title{
+    text-align: right;
+}
+
+.contact-info li.info-item{
+    text-align: right;
+}
+
+.menu-list > li:not(:last-child):after{
+    left: auto;
+    right: 100%;
+}
+
+.bg-full-right{
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+.bg-full-right:after{
+    right: -15px;
+    left: -2000px;
+}
+
+.call-out.call-out-form span.call-out-icon, 
+.bg-full-right > span{
+    left: auto;
+    right: 50px;
+}
+
+.fancybox-button--close{
+    float: left;
+}
+
+.fancybox-buttons{
+    right: auto;
+    left: 0;
+}
+
+.map-section .map-info{
+    right: auto;
+    left: 20%;
+}
+
+.img-col-right{
+    right: auto;
+    left: 0;
+}
+
+.img-col-left{
+    left: auto;
+    right: 0;
+}
+
+a.link-text{
+    display: inline-block;
+}
+
+.tabs.vertical.style-2.var2 .tabs-content{
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.custom-select .select-title:before{
+    right: auto;
+    left: 20px;
+}
+
+.search-holder .btn{
+    margin-left: 0;
+    margin-right: 4px;
+}
+
+.share-wrap .share-title{
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.social-icons.share > li > a > i{
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.dropcap::first-letter{
+    float: right;
+    margin: 15px 0 0 10px;
+}
+
+.custom-list > li > ul > li, 
+.custom-list > li > ol > li{
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.custom-list.type-2 li::before{
+    content: "\e943";
+}
+
+.blockquote-holder.with-bg:after{
+    right: auto;
+    left: -50px;
+}
+
+.search-form > button{
+    right: auto;
+    left: 20px;
+}
+
+.link-attachment:before{
+    right: auto;
+    left: -15px;
+}
+
+.tagcloud a{
+    float: right;
+}
+
+.widget-calendar table tr th{
+    text-align: center;
+}
+
+.twitter ul li .entry-meta{
+    float: right;
+}
+
+.twitter ul li .menu-list{
+    float: left;
+}
+
+.info-btn.prev-btn:after, 
+.info-btn.exp-btn:after, 
+.info-btn.next-btn:after{
+    left: auto;
+    right: -15px;
+}
+
+.info-btn.next-btn:after{
+    right: auto;
+    left: -15px;
+}
+
+.info-btn.prev-btn, 
+.info-btn.exp-btn{
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.info-btn.next-btn{
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.team-holder.var2 .team-item .member-photo,
+.gravatar{
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.comments-list .children .comment{
+    padding-left: 0;
+    padding-right: 40px;
+}
+
+.comment-author{
+    float: right;
+}
+
+.comment .comment-info{
+    float: left;
+}
+
+input[type="radio"] + label:not(:last-child), 
+input[type="checkbox"] + label:not(:last-child){
+    margin-right: 0;
+    margin-left: 25px;
+}
+
+input[type="radio"] + label, 
+input[type="checkbox"] + label{
+    padding-left: 0;
+    padding-right: 42px;
+}
+
+input[type="radio"] + label::before, 
+input[type="checkbox"] + label::before{
+    left: auto;
+    right: 0;
+}
+
+input[type="radio"] + label::after{
+    left: auto;
+    right: 7.5px;
+}
+
+.contact-form .with-text input{
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+input[type="checkbox"] + label::after{
+    left: auto;
+    right: 2px;
+}
+
+/* ------------------------------------------------
+
+        4. Media queries
+
+------------------------------------------------ */
+
+/* Bootstrap rtl changes */
+
+@media (min-width: 1200px){
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+        float: right;
+    }
+}
+@media (min-width: 992px){
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+        float: right;
+    }
+}
+@media (min-width: 768px){
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{
+        float: right;
+    }
+}
+@media (min-width: 468px){
+    .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
+        float: right;
+    }
+}
+
+@media only screen and (max-width:1199px){
+
+
+}
+
+@media only screen and (max-width:992px){
+    
+    #advanced-menu-hide{
+        right: auto!important;
+        left: 30px!important;
+    }
+
+    .mobile-advanced ul ul li > a:before{
+        margin-right: 0!important;
+        margin-left: 5px!important;
+        content: "\f104"!important;
+    }
+
+    .pt-section .tabs.vertical .tabs-content{
+        padding-right: 0;
+    }
+
+    .bg-full-right:after{
+        right: -2000px;
+    }
+
+}
+
+@media (min-width: 992px){
+    
+    #sidebar.sbr{
+        border-right: 1px solid #eee!important;
+        padding-right: 60px!important;
+        padding-left: 0!important;
+        border-left: none!important;
+    }
+
+    #main.sbr {
+        padding-right: 15px!important;
+        padding-left: 60px!important;
+    }
+
+}
+
+@media only screen and (min-width:768px){
+
+
+}
+
+@media (max-width: 767px){
+
+
+}
+
+@media only screen and (max-width: 480px){
+    
+    .header.style-3 .menu-holder .nav-item{
+        text-align: right!important;
+    }
+
+    .header.style-3 .menu-holder button.search-button{
+        margin-right: 5px!important;
+        margin-left: 20px!important;
+    }
+
+    .header.style-3 .menu-holder .btn{
+        margin-left: 0!important;
+        margin-right: 75px!important;
+    }
+
+}

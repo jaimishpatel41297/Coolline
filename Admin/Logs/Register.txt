@@ -1,0 +1,9 @@
+---------------------------------------------------------------------------------------------------------
+Date : 9/29/2016 4:59:12 PM
+Message : The SaveAs method is configured to require a rooted path, and the path '~/Resources/Logo/9Logo_9.jpg' is not rooted.
+---------------------------------------------------------------------------------------------------------
+Date : 9/29/2016 4:59:20 PM
+Message : The SaveAs method is configured to require a rooted path, and the path '~/Resources/Logo/9Logo_9.jpg' is not rooted.
+---------------------------------------------------------------------------------------------------------
+Date : 9/29/2016 5:00:05 PM
+Message : The SaveAs method is configured to require a rooted path, and the path '~/Resources/Logo/9Logo_9.jpg' is not rooted.

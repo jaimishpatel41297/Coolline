@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "termosolar-icon-font";
+  src:url("fonts/termosolar-icon-font.eot");
+  src:url("fonts/termosolar-icon-fontd41d.eot?#iefix") format("embedded-opentype"),
+    url("fonts/termosolar-icon-font.woff") format("woff"),
+    url("fonts/termosolar-icon-font.ttf") format("truetype"),
+    url("fonts/termosolar-icon-font.svg#termosolar-icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "termosolar-icon-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="cicon-"]:before,
+[class*=" cicon-"]:before {
+  font-family: "termosolar-icon-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cicon-ac-repair-maintenance:before {
+  content: "\61";
+}
+.cicon-air-quality:before {
+  content: "\62";
+}
+.cicon-central-air-installation:before {
+  content: "\63";
+}
+.cicon-cooling:before {
+  content: "\64";
+}
+.cicon-duct-cleaning:before {
+  content: "\65";
+}
+.cicon-plumbing-repair:before {
+  content: "\66";
+}
+.cicon-plumbing:before {
+  content: "\67";
+}
+.cicon-lighting:before {
+  content: "\68";
+}
+.cicon-leak-detection:before {
+  content: "\69";
+}
+.cicon-heating:before {
+  content: "\6a";
+}
+.cicon-surge-protection:before {
+  content: "\6b";
+}
+.cicon-water-filtration:before {
+  content: "\6c";
+}
+.cicon-electircal:before {
+  content: "\6d";
+}
+.cicon-emergency-plumbing:before {
+  content: "\6e";
+}
+.cicon-furnace-installation:before {
+  content: "\6f";
+}
+.cicon-furnace-repair-maintenance:before {
+  content: "\70";
+}
+.cicon-generators:before {
+  content: "\71";
+}
+.cicon-glove:before {
+  content: "\72";
+}
+.cicon-heat-pump-installation:before {
+  content: "\73";
+}
+.cicon-heater-repair-maintenance:before {
+  content: "\74";
+}

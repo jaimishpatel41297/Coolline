@@ -1,0 +1,4 @@
+--------------------------------------------------------
+userid : 1
+fcm token : fvd6ZaPCjxQ:APA91bGwuNsaVCUz-CTv3iNGu1Yd9s8Ej9GCUcQmRvEk1xsE6HVJX8SWC9YSlnxEs_duUE2XTWFBoa8k0CkrsB87g0WYxoIcGPB93VIjnFPWH7t5fn_gkrvOySQ2I7x-eg2ERzfZ7u1V
+Result : {"multicast_id":6977927265289043165,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1497617555062143%849730b2f9fd7ecd"}]}
